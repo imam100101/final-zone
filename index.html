@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZONE47 | Premium Phones & Gadgets</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for social media and utility icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- Configure Tailwind Colors & Font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-black': '#111827', // Darker black for text/background
+                        'accent-blue': '#3B82F6', // The blue touch
+                        'light-gray': '#F9FAFB',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        .container {
+            max-width: 1200px;
+        }
+        /* Custom styling for the primary action button (WhatsApp) */
+        .whatsapp-btn {
+            background-color: #3b82f6; /* Blue accent */
+            transition: all 0.2s;
+        }
+        .whatsapp-btn:hover {
+            background-color: #2563eb;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+        /* Style for the secondary action button */
+        .pay-btn {
+            transition: all 0.2s;
+            border: 1px solid #3b82f6;
+        }
+        .pay-btn:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body class="bg-white text-primary-black font-sans">
+
+    <!-- Header & Navigation -->
+    <header class="shadow-md sticky top-0 z-50 bg-white">
+        <div class="container mx-auto p-4 flex justify-between items-center border-b border-gray-100">
+            <!-- Logo & Brand Name -->
+            <a href="#" class="flex items-center space-x-2">
+                <!-- Simple Text Logo inspired by the provided image -->
+                <span class="text-2xl font-extrabold tracking-widest text-primary-black">ZONE</span>
+                <span class="text-xl font-bold text-accent-blue tracking-tighter">47</span>
+            </a>
+            
+            <!-- Social Media Icons (Hidden on Mobile, Visible on Desktop) -->
+            <div class="hidden sm:flex items-center space-x-4">
+                <a href="https://wa.me/2347083917553" target="_blank" aria-label="WhatsApp" class="text-primary-black hover:text-accent-blue transition duration-150">
+                    <!-- WhatsApp Icon -->
+                    <script>document.write(lucide.createIcons()['message-circle'].toSvg({ width: 24, height: 24 }));</script>
+                </a>
+                <a href="https://www.instagram.com/zone___47?igsh=MWFxcG43bXN2aWJzNg==" target="_blank" aria-label="Instagram" class="text-primary-black hover:text-accent-blue transition duration-150">
+                    <!-- Instagram Icon -->
+                    <script>document.write(lucide.createIcons()['instagram'].toSvg({ width: 24, height: 24 }));</script>
+                </a>
+                <a href="https://www.tiktok.com/@zone___47?_r=1&_t=ZS-91DlZ276r8E" target="_blank" aria-label="TikTok" class="text-primary-black hover:text-accent-blue transition duration-150">
+                    <!-- TikTok Icon (Using a similar 'play' icon as a stand-in) -->
+                    <script>document.write(lucide.createIcons()['play'].toSvg({ width: 24, height: 24 }));</script>
+                </a>
+            </div>
+            
+            <!-- Primary Contact Button (Visible on Mobile) -->
+            <a href="https://wa.me/2347083917553" target="_blank" class="sm:hidden bg-primary-black text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-700 transition duration-150">
+                Order via WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-primary-black text-white py-16 md:py-24">
+        <div class="container mx-auto p-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">
+                Get Your Next Tech Upgrade.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Premium phones, gadgets, and accessories delivered right to your door in Nigeria. Quality guaranteed.
+            </p>
+            <a href="#products" class="whatsapp-btn text-white font-bold py-3 px-8 rounded-xl text-lg shadow-xl inline-flex items-center space-x-2">
+                <span>Shop Our Latest Collection</span>
+                <script>document.write(lucide.createIcons()['arrow-right'].toSvg({ width: 20, height: 20 }));</script>
+            </a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 md:py-20 bg-light-gray">
+        <div class="container mx-auto p-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Featured Products</h2>
+            
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+                <!-- Product Card 1: ZoneMax Pro X (Phone) -->
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-[1.02] transition duration-300 group">
+                    <div class="p-6 md:p-8 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                        
+                        <!-- Image Placeholder -->
+                        <div class="flex-shrink-0 w-full md:w-56 h-48 bg-primary-black rounded-lg flex items-center justify-center">
+                            <span class="text-accent-blue text-4xl font-extrabold">PHONE</span>
+                        </div>
+
+                        <!-- Product Details -->
+                        <div class="flex flex-col justify-between w-full">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-2 text-primary-black">ZoneMax Pro X</h3>
+                                <p class="text-sm text-gray-500 mb-4">The ultimate smartphone experience. 120Hz display, 108MP camera, 5G enabled.</p>
+                                <span class="text-3xl font-extrabold text-accent-blue">₦650,000</span>
+                                <span class="text-sm text-gray-500 ml-2">(Estimated Price)</span>
+                            </div>
+                            
+                            <!-- Action Buttons -->
+                            <div class="mt-6 flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                                <!-- Primary Action: WhatsApp Order -->
+                                <a href="https://wa.me/2347083917553?text=Hi%2C%20I%20want%20to%20buy%20the%20ZoneMax%20Pro%20X%20(₦650,000)." target="_blank" class="whatsapp-btn text-white font-bold py-3 px-6 rounded-lg text-center flex-1 transition duration-150 inline-flex items-center justify-center space-x-2">
+                                    <script>document.write(lucide.createIcons()['whatsapp'].toSvg({ width: 20, height: 20 }));</script>
+                                    <span>Order via WhatsApp</span>
+                                </a>
+                                
+                                <!-- Secondary Action: Payment Placeholder -->
+                                <button onclick="showPaymentInfo('ZoneMax Pro X', '650,000')" class="pay-btn bg-white text-accent-blue font-bold py-3 px-6 rounded-lg text-center flex-1 shadow-md">
+                                    Paystack/Bank Transfer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2: Echo Buds 47 (Gadget) -->
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden transform hover:scale-[1.02] transition duration-300 group">
+                    <div class="p-6 md:p-8 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                        
+                        <!-- Image Placeholder -->
+                        <div class="flex-shrink-0 w-full md:w-56 h-48 bg-primary-black rounded-lg flex items-center justify-center">
+                            <span class="text-accent-blue text-4xl font-extrabold">GADGET</span>
+                        </div>
+
+                        <!-- Product Details -->
+                        <div class="flex flex-col justify-between w-full">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-2 text-primary-black">Echo Buds 47</h3>
+                                <p class="text-sm text-gray-500 mb-4">Crystal clear audio, active noise cancellation, and 30-hour battery life.</p>
+                                <span class="text-3xl font-extrabold text-accent-blue">₦85,000</span>
+                                <span class="text-sm text-gray-500 ml-2">(Estimated Price)</span>
+                            </div>
+                            
+                            <!-- Action Buttons -->
+                            <div class="mt-6 flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                                <!-- Primary Action: WhatsApp Order -->
+                                <a href="https://wa.me/2347083917553?text=Hi%2C%20I%20want%20to%20buy%20the%20Echo%20Buds%2047%20(₦85,000)." target="_blank" class="whatsapp-btn text-white font-bold py-3 px-6 rounded-lg text-center flex-1 transition duration-150 inline-flex items-center justify-center space-x-2">
+                                    <script>document.write(lucide.createIcons()['whatsapp'].toSvg({ width: 20, height: 20 }));</script>
+                                    <span>Order via WhatsApp</span>
+                                </a>
+                                
+                                <!-- Secondary Action: Payment Placeholder -->
+                                <button onclick="showPaymentInfo('Echo Buds 47', '85,000')" class="pay-btn bg-white text-accent-blue font-bold py-3 px-6 rounded-lg text-center flex-1 shadow-md">
+                                    Paystack/Bank Transfer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- End Product Grid -->
+        </div>
+    </section>
+
+    <!-- Modal for Payment Information (Replaces alert()) -->
+    <div id="payment-modal" class="fixed inset-0 bg-primary-black bg-opacity-75 z-[100] hidden items-center justify-center p-4" onclick="hidePaymentInfo(event)">
+        <div class="bg-white rounded-xl p-8 max-w-lg w-full shadow-2xl transform transition-all duration-300" onclick="event.stopPropagation()">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-2xl font-bold text-accent-blue">Payment Gateway Setup</h3>
+                <button onclick="document.getElementById('payment-modal').classList.add('hidden');" class="text-primary-black hover:text-red-500">
+                    <script>document.write(lucide.createIcons()['x'].toSvg({ width: 24, height: 24 }));</script>
+                </button>
+            </div>
+            
+            <p class="mb-4 text-gray-700" id="modal-product-text">
+                Thank you for choosing ZONE47! To complete your purchase of **[Product Name]** for **₦[Price]**, please follow one of the methods below.
+            </p>
+
+            <h4 class="font-semibold text-lg mt-6 mb-2">Option 1: Bank Transfer (Direct)</h4>
+            <div class="bg-gray-100 p-4 rounded-lg text-sm text-primary-black">
+                <p><strong>Bank:</strong> [Your Bank Name Here]</p>
+                <p><strong>Account Name:</strong> [Your Account Name]</p>
+                <p><strong>Account Number:</strong> [Your Account Number]</p>
+            </div>
+            <p class="text-sm text-gray-500 mt-2">
+                *After transfer, please send proof of payment to our <a href="https://wa.me/2347083917553" target="_blank" class="text-accent-blue font-medium hover:underline">WhatsApp line</a> to confirm your order.
+            </p>
+
+            <h4 class="font-semibold text-lg mt-6 mb-2">Option 2: Paystack/Online Gateway</h4>
+            <div class="bg-gray-100 p-4 rounded-lg text-sm text-primary-black">
+                <p>A dedicated Paystack or Flutterwave payment link can be set up here once your account is configured.</p>
+                <p class="mt-2 text-accent-blue font-semibold">
+                    (Placeholder Link for Full Integration)
+                </p>
+            </div>
+            
+            <button onclick="document.getElementById('payment-modal').classList.add('hidden');" class="whatsapp-btn text-white font-bold py-3 px-6 rounded-lg mt-6 w-full shadow-lg">
+                Close
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="bg-primary-black text-white py-12">
+        <div class="container mx-auto p-6 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+            
+            <!-- Logo & Copyright -->
+            <div class="text-center md:text-left">
+                <p class="text-xl font-extrabold tracking-wider mb-2">ZONE<span class="text-accent-blue">47</span></p>
+                <p class="text-sm text-gray-400">&copy; 2025 ZONE47. All rights reserved.</p>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="flex flex-col items-center md:items-start space-y-2">
+                <h4 class="font-semibold text-lg mb-1">Contact Us</h4>
+                <a href="https://wa.me/2347083917553" target="_blank" class="text-gray-300 hover:text-accent-blue transition duration-150 flex items-center space-x-2">
+                    <script>document.write(lucide.createIcons()['phone'].toSvg({ width: 16, height: 16 }));</script>
+                    <span>WhatsApp: +234 708 391 7553</span>
+                </a>
+                <a href="mailto:zone47customercare@gmail.com" class="text-gray-300 hover:text-accent-blue transition duration-150 flex items-center space-x-2">
+                    <script>document.write(lucide.createIcons()['mail'].toSvg({ width: 16, height: 16 }));</script>
+                    <span>Email: zone47customercare@gmail.com</span>
+                </a>
+            </div>
+
+            <!-- Social Links (Footer) -->
+            <div class="flex items-center space-x-6">
+                <a href="https://www.instagram.com/zone___47?igsh=MWFxcG43bXN2aWJzNg==" target="_blank" aria-label="Instagram" class="text-white hover:text-accent-blue transition duration-150">
+                    <script>document.write(lucide.createIcons()['instagram'].toSvg({ width: 28, height: 28 }));</script>
+                </a>
+                <a href="https://www.tiktok.com/@zone___47?_r=1&_t=ZS-91DlZ276r8E" target="_blank" aria-label="TikTok" class="text-white hover:text-accent-blue transition duration-150">
+                    <script>document.write(lucide.createIcons()['youtube'].toSvg({ width: 28, height: 28 }));</script>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Function to show the custom payment modal
+        function showPaymentInfo(productName, productPrice) {
+            const modal = document.getElementById('payment-modal');
+            const productText = document.getElementById('modal-product-text');
+            
+            productText.innerHTML = `
+                Thank you for choosing ZONE47! To complete your purchase of <strong>${productName}</strong> for <strong>₦${productPrice}</strong>, please follow one of the methods below.
+            `;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        // Function to hide the custom payment modal
+        function hidePaymentInfo(event) {
+            // Only hide if the user clicks the backdrop, not the modal content itself
+            if (event && event.target === document.getElementById('payment-modal')) {
+                document.getElementById('payment-modal').classList.add('hidden');
+            }
+        }
+
+        // Initialize icons after the DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+
+</body>
+</html>
